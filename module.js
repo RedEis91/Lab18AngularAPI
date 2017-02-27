@@ -6,7 +6,7 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl: 'input.html'
     })
     .when('/output', {
-        controller: 'outputController',
+        controller: 'fizzbuzzCtrl',
         templateUrl: 'output.html'
     })
     .otherwise({redirectTo: '/'});

@@ -1,29 +1,10 @@
 var app = angular.module("lab18Module");
 
-var numberToFizzBuzz;
 
-app.controller('fizzbuzzCtrl', function ($scope, $location) {
-    $scope.takeNumber = function (numberToFizzBuzz) {
-        infoFactory.sentInfo(numberToFizzBuzz);
-        $scope.numberToFizzBuzz = numberToFizzBuzz;
-        console.log(numberToFizzBuzz);
-
-
-        var i = numberToFizzBuzz;
-
-            if (i % 3 === 0 && i % 5 === 0) {
-               console.log('FizzBuzz');
-            } else if (i % 3 === 0) {
-                console.log('Fizz')
-            } else if (i % 5 === 0) {
-                console.log('Buzz')
-            } else {
-                console.log(i);
-
-        
-    
-}
-}});
+app.controller('fizzbuzzCtrl', function ($scope, infoFactory) {
+               var a = infoFactory.takeNumber();
+            console.log(a);
+} );
 
 //services.factory('jodaTextResource', ["$http", function($http) {
 //    var FINAL_API_URL = "https://yoda.p.mashape.com/yoda?sentence=";
