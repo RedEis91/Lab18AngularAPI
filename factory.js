@@ -1,26 +1,28 @@
 var app = angular.module("lab18Module");
-var numberToFizzBuzz;
-
-app.factory('infoFactory', function () {
+app.factory("infoFactory", function () {
+    var answer;
     return {
 
         takeNumber: function (numberToFizzBuzz) {
-            $scope.numberToFizzBuzz = numberToFizzBuzz;
-var reply;
-            var i = numberToFizzBuzz;
-            if (i % 3 === 0 && i % 5 === 0) {
-               reply = 'FizzBuzz! ' + i;
-            } else if (i % 3 === 0) {
-                reply = 'Fizz! ' + i;
-            } else if (i % 5 === 0) {
-                reply = 'Buzz! ' + i;
-            } else {
-                reply = i;
-            }
-            return reply;
-        }
 
+
+            if (numberToFizzBuzz % 3 === 0 && numberToFizzBuzz % 5 === 0) {
+                answer = "FizzBuzz!";
+            } else if (numberToFizzBuzz % 3 === 0) {
+                answer = "Fizz! ";
+            } else if (numberToFizzBuzz % 5 === 0) {
+                answer = "Buzz! ";
+            } else {
+                answer = "numberToFizzBuzz";
+            }
+
+            console.log(answer);
+        },
+        inputReturn: function() {
+            return answer;
+        }
     }
+
 });
 
 
