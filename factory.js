@@ -13,7 +13,7 @@ app.factory("infoFactory", function () {
             } else if (numberToFizzBuzz % 5 === 0) {
                 answer = "Buzz! ";
             } else {
-                answer = "numberToFizzBuzz";
+                answer = "not fizzbuzzable.";
             }
 
             console.log(answer);
