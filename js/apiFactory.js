@@ -1,7 +1,5 @@
 var app = angular.module("lab18Module");
 app.factory('apiFactory', function() {
-        var robotz;
-
         return {
             $.get({
                 url: 'https://robohash.p.mashape.com/index.php?text=fizzbuzz',
@@ -10,8 +8,8 @@ app.factory('apiFactory', function() {
                     "Accept": "application/json"
                 }
             }, function(responseBody) {
-                log(responseBody);
+                console.log(responseBody);
             });
 
-        });
-}
+        }};
+);
