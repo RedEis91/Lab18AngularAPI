@@ -1,4 +1,5 @@
 var app = angular.module("lab18Module");
+
 app.factory('apiFactory', function($http) {
     var robotz;
 
@@ -22,3 +23,4 @@ app.factory('apiFactory', function($http) {
         }
     }
 });
+
