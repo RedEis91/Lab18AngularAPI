@@ -1,7 +1,7 @@
 var app = angular.module("lab18Module", ['ngRoute']);
 app.config(function($routeProvider, $locationProvider){
     $routeProvider
-    .when('/input', {
+    .when('/ngFizzBuzz', {
         controller: 'fizzbuzzCtrl',
         templateUrl: 'input.html'
     })
@@ -12,3 +12,13 @@ app.config(function($routeProvider, $locationProvider){
     .otherwise({redirectTo: '/'});
     $locationProvider.hashPrefix('');
 });
+
+
+app.directive("logoBogo", function() {
+    return {
+        restrict: "EA",
+        replace: true,
+        template: "<img src='banner-angularjs.jpg' alt='Tony Hawk' height=25% width=25%>"
+    }
+});
+  
