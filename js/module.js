@@ -1,4 +1,4 @@
-var app = angular.module("lab18Module", ['ngRoute']);
+var app = angular.module("lab18Module", ['ngRoute'], ['ngAnimate']);
 app.config(function($routeProvider, $locationProvider){
     $routeProvider
     .when('/ngFizzBuzz', {
@@ -30,4 +30,3 @@ app.directive("footerLogo", function() {
         template: "<img src='img/ATeam1.jpg' alt='footerLogo' height=50% width=50% >"
     }
 });
-  
