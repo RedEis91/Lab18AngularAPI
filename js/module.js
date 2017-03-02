@@ -1,4 +1,4 @@
-var app = angular.module("lab18Module", ['ngRoute'], ['ngAnimate']);
+var app = angular.module("lab18Module", ['ngRoute']);
 app.config(function($routeProvider, $locationProvider){
     $routeProvider
     .when('/ngFizzBuzz', {
